@@ -163,4 +163,8 @@
     <string name="lang_changed">S\'ha canviat l\'idioma</string>
     <string name="lang_change_description">Seleccioneu l\'idioma en què voleu veure l\'aplicació</string>
     <string name="dark_mode">mode fosc</string>
+
+    <string name="client_not_found">No s\'ha trobat el client.</string>
+    <string name="device_not_connected_to_internet">Dispositiu no connectat a Internet</string>
+
 </resources>

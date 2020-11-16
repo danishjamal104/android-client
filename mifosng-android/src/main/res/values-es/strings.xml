@@ -163,4 +163,8 @@
     <string name="lang_changed">Idioma cambiado</string>
     <string name="lang_change_description">Seleccione el idioma en el que desea ver la aplicación</string>
     <string name="dark_mode">modo oscuro</string>
+
+    <string name="client_not_found">Cliente no encontrado.</string>
+    <string name="device_not_connected_to_internet">Dispositivo no conectado a internet</string>
+
 </resources>

@@ -614,6 +614,8 @@
     <string name="collectionsheet_submit_success">कलेक्शन शीट सफलतापूर्वक जमा कर दी गई</string>
     <string name="individual_collection_sheet">व्यक्तिगत कलेक्शन शीट</string>
     <string name="due_collection">कलेक्शन का देय</string>
+    <string name="client_not_found">ग्राहक नहीं मिला।</string>
+    <string name="device_not_connected_to_internet">डिवाइस इंटरनेट से कनेक्ट नहीं है</string>
 
     !-- About App -->
     <string name="about_app">फील्ड ऑफिसर एप्लीकेशन एक एप्लीकेशन है बैंक स्टाफ फील्ड ऑफिसर के लिए विकसित किया गया

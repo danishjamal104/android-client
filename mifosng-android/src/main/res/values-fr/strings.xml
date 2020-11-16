@@ -610,4 +610,8 @@
     <string name="lang_change_description">Sélectionnez la langue dans laquelle vous souhaitez afficher l\'application</string>
     <string name="dark_mode">mode sombre</string>
 
+
+    <string name="client_not_found">Client introuvable.</string>
+    <string name="device_not_connected_to_internet">Appareil non connecté à Internet</string>
+
 </resources>
