@@ -69,6 +69,9 @@ public class SearchFragment extends MifosBaseFragment implements SearchMvpView,
     @Inject
     SearchPresenter searchPresenter;
 
+    // determines weather search is triggered by user or system
+    boolean autoTriggerSearch = false;
+
     private List<SearchedEntity> searchedEntities;
     private ArrayAdapter<CharSequence> searchOptionsAdapter;
     private String resources;
@@ -117,9 +120,11 @@ public class SearchFragment extends MifosBaseFragment implements SearchMvpView,
             EspressoIdlingResource.increment(); // App is busy until further notice.
             searchPresenter.searchResources(query, resources, cb_exactMatch.isChecked());
         } else {
-            Toaster.show(et_search, getString(R.string.no_search_query_entered));
+            if (!autoTriggerSearch) {
+                Toaster.show(et_search, getString(R.string.no_search_query_entered));
+            }
         }
-
+        autoTriggerSearch = false;
     }
 
     @Override
@@ -210,6 +215,8 @@ public class SearchFragment extends MifosBaseFragment implements SearchMvpView,
             } else {
                 resources = searchOptionsValues[position - 1];
             }
+            autoTriggerSearch = true;
+            onClickSearch();
         }
     }
 
